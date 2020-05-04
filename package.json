@@ -9,7 +9,7 @@
     "url": "https://github.com/squaremo/amqp.node.git"
   },
   "engines": {
-    "node": ">=0.8 <=12"
+    "node": ">=0.8 <=14"
   },
   "dependencies": {
     "bitsyntax": "~0.1.0",
@@ -27,7 +27,8 @@
   },
   "scripts": {
     "test": "make test",
-    "prepare": "make"
+    "prepare": "make",
+    "postinstall": "make lib/defs.js"
   },
   "keywords": [
     "AMQP",
